@@ -1,6 +1,6 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = "https://agitated-chandrasekhar-535c9c.netlify.app";
+const redirectUri = "https://agitated-chandrasekhar-535c9c.netlify.app/";
 
 const clientId = "c753c137559a43c5905ce68a16f49e5e";
 
@@ -11,6 +11,10 @@ const scopes = [
   "user-read-playback-state",
   "user-top-read",
   "user-modify-playback-state",
+  "playlist-modify-private",
+  "playlist-read-private",
+  "playlist-modify-public",
+  "playlist-read-collaborative",
 ];
 
 export const getTokenFromUrl = () => {
